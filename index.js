@@ -352,12 +352,36 @@ The function should console.log 50 chunks of HTML code that match the structure 
 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
 
-function getHTML(/* Code here */){
-
-    /* Code here */
-
+// only issue - all have the same image.
+function getHTML(data){
+  for(let i = 0; i<data.length; i++){
+    let name = "";
+    let wiki = "";
+    let bio = "";
+    let x;
+    for(x in data[i]){
+      if(x === "name"){
+        name = data[i][x];
+      } else if (x === "wikipedia"){
+        wiki = data[i][x];
+      } else if (x === "bio"){
+        bio = data[i][x];
+      }
+    }
+    console.log(`
+    <div id="artist">
+      <div class="image">
+          <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/starry-night-by-vincent-van-gogh-vincent-van-gogh.jpg"/>
+      </div>
+      <div class = "name">
+        <a href="${wiki}">${name}</a>
+      </div>
+      <div class = "bio">${bio}</div>
+    </div>
+    `);
   }
-
+}
+getHTML(artists);
 
 /* 💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪
 Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
