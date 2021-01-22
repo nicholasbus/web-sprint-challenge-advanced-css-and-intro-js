@@ -23,9 +23,16 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. How would you describe acessibility on the web to someone new to programming?
+    * I would describe accessibility on the web to someone new to programing by comparing it to accessibility in the real world. Some buildings have ramps instead of stairs, sometimes books are printed in larger font size for those who have a visual disability. The same concepts apply to the web; web pages are semantically marked up so screen readers can accurately read the page, and font sizes are made easily scalable just in case someone would need to zoom in on the page.
+
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+    * Three different things you can do to ensure your website is accessible are: (1) make sure the HTML is semantic, the tags should describe the content. (2) Make sure the alt attributes of images are properly filled in order for screen readers to accurately describe the image. (3) Make sure the font size across the page is scalable in order to accomodate for zooming in or out.
+ 
 3. How would you explain the concept of a variable to someone new to programming?
+    * I would describe the concept of a variable to someone who is new to programming by comparing it to a jar. You can put anything inside the jar and access it later as needed. If a variable is declared with let then the jar's lid can be unscrewed and the contents can be replaced. If a variable is declared with const then the jar's lid cannot be opened and the contents cannot be replaced. 
+
 4. What is the purpose of using functions in code?
+    * The purpose of using functions in code is to make code reusable. Instead of having the same code block written out multiple times, we could store the code in a function and invoke the function when needed. Functions help keep the code DRY. DRY meaning Don't Repeat Yourself.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
